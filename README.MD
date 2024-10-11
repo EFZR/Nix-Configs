@@ -1,1 +1,1 @@
-# Nix configs
+# Nix configs ✨️

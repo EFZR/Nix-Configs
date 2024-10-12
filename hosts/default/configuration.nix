@@ -18,6 +18,7 @@
       pkgs.neovim
       pkgs.git
       pkgs.tmux
+      pkgs.zig
   ];
 
   home-manager = {

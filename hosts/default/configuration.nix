@@ -33,7 +33,8 @@
 		"nixos" = import ./home.nix;
 	};
   };
-
+ 
+  programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
   # This value determines the NixOS release from which the default

@@ -19,6 +19,12 @@
       pkgs.git
       pkgs.tmux
       pkgs.zig
+      pkgs.fd
+      pkgs.cmake
+      pkgs.ripgrep
+      pkgs.lazygit
+      pkgs.jq
+      pkgs.zsh
   ];
 
   home-manager = {

@@ -25,6 +25,7 @@
       pkgs.lazygit
       pkgs.jq
       pkgs.zsh
+	  pkgs.unzip
   ];
 
   home-manager = {

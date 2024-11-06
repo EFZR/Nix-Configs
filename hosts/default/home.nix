@@ -85,7 +85,7 @@
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-
+	
     shellAliases = {
       ll = "ls -l";
       update = "sudo nixos-rebuild switch --flake github:efzr/Nix-Configs/main";
@@ -96,4 +96,11 @@
       path = "${config.xdg.dataHome}/zsh/history";
     };
   };
+
+	programs.neovim = {
+		enable = true;
+		viAlias = true;
+		vimAlias = true;
+		vimdiffAlias = true;
+	};
 }

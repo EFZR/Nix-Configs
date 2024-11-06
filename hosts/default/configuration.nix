@@ -34,6 +34,10 @@
 		"nixos" = import ./home.nix;
 	};
   };
+
+  # This is an alternative to use Mason in nvim
+  # Fix and use NixVim in future
+	programs.nix-ld.enable = true;
  
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;

@@ -76,8 +76,8 @@
 
   programs.git = {
     enable = true;
-    userName = "efzr";
-    userEmail = "emerson.zapatarivas@gmail.com";
+    userName = "efzrbhc";
+    userEmail = "ezapata@banhcafe.hn";
   };
 
   programs.zsh = {

@@ -35,7 +35,9 @@
     pkgs.jq
     pkgs.zsh
     pkgs.unzip
-  ];
+		pkgs.dotnetCorePackages.sdk_8_0
+		pkgs.omnisharp-roslyn
+	];
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };

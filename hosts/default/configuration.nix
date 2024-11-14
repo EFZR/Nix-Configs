@@ -37,6 +37,7 @@
     pkgs.unzip
 		pkgs.dotnetCorePackages.sdk_8_0
 		pkgs.omnisharp-roslyn
+		pkgs.nodejs
 	];
 
   home-manager = {

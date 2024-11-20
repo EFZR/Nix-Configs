@@ -86,9 +86,9 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
-		initExtra = ''
-      [[ ! -f ${/home/nixos/.p10k.zsh} ]] || source ${/home/nixos/.p10k.zsh}
-    '';
+		# initExtra = ''
+  #     [[ ! -f ${/home/nixos/.p10k.zsh} ]] || source ${/home/nixos/.p10k.zsh}
+  #   '';
 
     shellAliases = {
       ll = "ls -l";
@@ -104,7 +104,7 @@
 			enable = true;
 			plugins = [
 				{ name = "zsh-users/zsh-autosuggestions"; } # Simple plugin installation
-				{ name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; } # Installations with additional options. For the list of options, please refer to Zplug README.
+				# { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; } # Installations with additional options. For the list of options, please refer to Zplug README.
 			];
 		};
 	};

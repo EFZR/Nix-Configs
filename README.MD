@@ -1,4 +1,4 @@
-# NixOS configs ✨️✨️
+# NixOS configs ✨️✨️✨️
 
 ```bash
 sudo nixos-rebuild switch --flake .#work

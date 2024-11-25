@@ -35,9 +35,10 @@
     pkgs.jq
     pkgs.zsh
     pkgs.unzip
-		pkgs.dotnetCorePackages.sdk_8_0
-		pkgs.omnisharp-roslyn
-		pkgs.nodejs
+	pkgs.dotnetCorePackages.sdk_8_0
+	pkgs.omnisharp-roslyn
+	pkgs.netcoredbg
+	pkgs.nodejs
 	];
 
   home-manager = {
@@ -51,8 +52,8 @@
   # Fix and use NixVim in future
   programs.nix-ld.enable = true;
 
-  # programs.zsh.enable = true;
-  # users.defaultUserShell = pkgs.zsh;
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

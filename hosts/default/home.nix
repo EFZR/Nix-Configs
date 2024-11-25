@@ -86,7 +86,7 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
-		 initExtra = ''
+    initExtra = ''
       [[ ! -f ${/home/nixos/.p10k.zsh} ]] || source ${/home/nixos/.p10k.zsh}
     '';
 
@@ -100,14 +100,20 @@
       path = "${config.xdg.dataHome}/zsh/history";
     };
 
-		zplug = {
-			enable = true;
-			plugins = [
-				{ name = "zsh-users/zsh-autosuggestions"; } # Simple plugin installation
-				{ name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; } # Installations with additional options. For the list of options, please refer to Zplug README.
-			];
-		};
-	};
+    zplug = {
+      enable = true;
+      plugins = [
+        { name = "zsh-users/zsh-autosuggestions"; } # Simple plugin installation
+        {
+          name = "romkatv/powerlevel10k";
+          tags = [
+            "as:theme"
+            "depth:1"
+          ];
+        } # Installations with additional options. For the list of options, please refer to Zplug README.
+      ];
+    };
+  };
 
   programs.neovim = {
     enable = true;

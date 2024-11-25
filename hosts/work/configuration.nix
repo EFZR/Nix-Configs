@@ -15,8 +15,8 @@
 
 {
   wsl.enable = true;
-	wsl.defaultUser = "nixos";
-	nix.settings.experimental-features = [
+  wsl.defaultUser = "nixos";
+  nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
@@ -35,10 +35,10 @@
     pkgs.jq
     pkgs.zsh
     pkgs.unzip
-	pkgs.dotnetCorePackages.sdk_8_0
-	pkgs.omnisharp-roslyn
-	pkgs.nodejs
-	pkgs.netcoredbg
+    pkgs.dotnetCorePackages.sdk_8_0
+    pkgs.omnisharp-roslyn
+    pkgs.nodejs
+    pkgs.netcoredbg
   ];
 
   home-manager = {

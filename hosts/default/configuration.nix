@@ -39,6 +39,7 @@
 	pkgs.omnisharp-roslyn
 	pkgs.netcoredbg
 	pkgs.nodejs
+	pkgs.vscode-langservers-extracted
 	];
 
   home-manager = {

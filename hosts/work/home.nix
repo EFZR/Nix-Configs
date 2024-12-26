@@ -80,6 +80,16 @@
     userEmail = "ezapata@banhcafe.hn";
   };
 
+
+	programs.ssh = {
+	  extraConfig = ''
+	    Host dockerDev
+	      HostName 172.20.19.10
+	      User banhcafe
+	      IdentityFile ~/.ssh/dockerDev
+	  '';
+	};
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;

@@ -40,6 +40,7 @@
     pkgs.netcoredbg
     pkgs.nodejs
     pkgs.vscode-langservers-extracted
+	pkgs.direnv
   ];
 
   home-manager = {

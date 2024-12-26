@@ -37,8 +37,10 @@
     pkgs.unzip
     pkgs.dotnetCorePackages.sdk_8_0
     pkgs.omnisharp-roslyn
-    pkgs.nodejs
     pkgs.netcoredbg
+    pkgs.nodejs
+    pkgs.vscode-langservers-extracted
+	pkgs.direnv
   ];
 
   home-manager = {

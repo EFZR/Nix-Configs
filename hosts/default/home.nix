@@ -88,6 +88,7 @@
 
     initExtra = ''
       [[ ! -f ${/home/nixos/.p10k.zsh} ]] || source ${/home/nixos/.p10k.zsh}
+	  eval "$(direnv hook zsh)"
     '';
 
     shellAliases = {

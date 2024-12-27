@@ -96,7 +96,8 @@
     syntaxHighlighting.enable = true;
 
     initExtra = ''
-      		  eval "$(direnv hook zsh)"
+		eval "$(direnv hook zsh)"
+		eval $(ssh-agent -s)
     '';
 
     shellAliases = {
@@ -119,6 +120,8 @@
       # theme = "Agnoster";
       # theme = "simple";
       theme = "half-life";
+      # theme = "eastwood";
+      # theme = "geoffgarside";
     };
   };
 

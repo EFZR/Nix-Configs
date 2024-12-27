@@ -68,7 +68,7 @@
   #  /etc/profiles/per-user/nixos/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-     EDITOR = "vim";
+    EDITOR = "vim";
   };
 
   # Let Home Manager install and manage itself.
@@ -76,8 +76,17 @@
 
   programs.git = {
     enable = true;
-    userName = "efzr";
-    userEmail = "emerson.zapatarivas@gmail.com";
+    userName = "efzrbhc";
+    userEmail = "ezapata@banhcafe.hn";
+  };
+
+  programs.ssh = {
+    extraConfig = ''
+      	    Host dockerDev
+      	      HostName 172.20.19.10
+      	      User banhcafe
+      	      IdentityFile ~/.ssh/dockerDev
+      	  '';
   };
 
   programs.zsh = {
@@ -87,8 +96,7 @@
     syntaxHighlighting.enable = true;
 
     initExtra = ''
-      [[ ! -f ${/home/nixos/.p10k.zsh} ]] || source ${/home/nixos/.p10k.zsh}
-	  eval "$(direnv hook zsh)"
+      		  eval "$(direnv hook zsh)"
     '';
 
     shellAliases = {
@@ -101,18 +109,16 @@
       path = "${config.xdg.dataHome}/zsh/history";
     };
 
-    zplug = {
+    # With Oh-My-Zsh:
+    oh-my-zsh = {
       enable = true;
       plugins = [
-        { name = "zsh-users/zsh-autosuggestions"; } # Simple plugin installation
-        {
-          name = "romkatv/powerlevel10k";
-          tags = [
-            "as:theme"
-            "depth:1"
-          ];
-        } # Installations with additional options. For the list of options, please refer to Zplug README.
+        "git"
       ];
+      # theme = "robbyrussell";
+      # theme = "Agnoster";
+      # theme = "simple";
+      theme = "half-life";
     };
   };
 

@@ -126,6 +126,8 @@
     };
   };
 
+  programs.direnv.enable = true;
+
   programs.neovim = {
     enable = true;
     viAlias = true;

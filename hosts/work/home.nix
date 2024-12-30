@@ -115,10 +115,10 @@
       plugins = [
         "git"
       ];
-      # theme = "robbyrussell";
+      theme = "robbyrussell";
       # theme = "Agnoster";
       # theme = "simple";
-      theme = "half-life";
+      # theme = "half-life";
       # theme = "eastwood";
       # theme = "geoffgarside";
     };

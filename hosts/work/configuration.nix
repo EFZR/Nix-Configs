@@ -41,6 +41,7 @@
     pkgs.nodejs
     pkgs.vscode-langservers-extracted
 	pkgs.direnv
+	pkgs.marksman
   ];
 
   home-manager = {
